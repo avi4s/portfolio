@@ -341,6 +341,9 @@ width: 20%;
    margin-top: 7%;
    padding: 3% 0;
 }
+.contact_content h2{
+    margin-bottom: 1%;
+}
 .contact_content p,h2,i{
    color: black;
    font-weight: 700;
@@ -746,6 +749,11 @@ width: 20%;
         align-items: center;
         flex-direction: column;
     }
+    .contact_content p,i{
+        color: black;
+        font-weight: 700;
+        font-size: 16px;
+      }
     .project_img1{
         width: 70%;
         margin-bottom: 2%;
