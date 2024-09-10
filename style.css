@@ -940,6 +940,10 @@ width: 20%;
         align-items: center;
         flex-direction: column;
     }
+    .wrapper .carousel {
+        grid-auto-columns: 100%;
+
+    }
   }
   
 
