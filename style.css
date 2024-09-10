@@ -906,6 +906,9 @@ width: 20%;
         align-items: center;
         flex-direction: column;
     }
+    .contact_content{
+        margin-top: 2%;
+    }
     .contact_content p,i{
         color: black;
         font-weight: 700;
