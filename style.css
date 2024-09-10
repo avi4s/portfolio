@@ -193,6 +193,7 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     margin-bottom: 7%;
     gap: 5%;
 }
@@ -795,7 +796,8 @@ width: 20%;
        
     }
     .about_me_content .about_me_description .img2{
-       display: none;
+       width: auto;
+       margin-bottom: 5%;
 
     }
     .about_me_short{
