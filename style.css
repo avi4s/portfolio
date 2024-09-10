@@ -569,12 +569,38 @@ width: 20%;
   }
 
   @media (min-width: 768px) and (max-width: 991px) {
+    section{
+        width: 100%;
+        min-height: 40vh;
+    }
     .image_content{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
         margin-bottom: 5%;
+        flex-direction: column; 
+    }
+    .image_content .main_content{
+        /* width: 60%; */
+        max-width: 80%;
+        margin: 0 auto;
+        margin-bottom: 5%;
+    }
+    .image_content .img1{
+        /* width: 70%; */
+        max-width: 100%;
+        margin: 0 auto;
+        /* height: 30vh; */
+        border-radius: 100%;
+        box-shadow: 0 0 50px red ;
     }
     .about_me_content{
        margin-bottom: 5%;
     }
+    .about_me_content .about_me_description .img2{
+        max-width: 100%;
+ 
+     }
     .skills_content{
         margin-bottom: 5%;
      }
