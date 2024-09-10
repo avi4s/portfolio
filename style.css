@@ -811,5 +811,12 @@ width: 20%;
         position: absolute;
         right: -5px; 
     }
+    .contact_details{
+        margin-top:5%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+    }
   }
   
