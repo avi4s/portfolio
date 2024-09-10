@@ -338,7 +338,7 @@ width: 20%;
     background-position: center;
 }
 .contact_content{
-   /* margin-top: 7%; */
+   margin-top: 3%;
    padding: 3% 0;
    display: flex; /* Use Flexbox */
    flex-direction: column; /* Arrange items vertically */
