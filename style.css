@@ -741,7 +741,7 @@ width: 20%;
    
   }
   @media only screen and (max-width: 600px) {
-    .skill_section{
+    /* .skill_section{
         background-image: none
     }
     .project_section{
@@ -749,6 +749,10 @@ width: 20%;
     }
     .services_section{
         background-image: none
+    } */
+    section{
+        width: 100%;
+        min-height: 20vh;
     }
   }
   
