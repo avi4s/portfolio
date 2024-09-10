@@ -1,9 +1,3 @@
-// Hamburger menu toggle
-// document.getElementById('hamburg').addEventListener('click', function() {
-//     var navList = document.getElementById('nav-list');
-//     navList.classList.toggle('show');
-// });
-
 const toggleButton = document.getElementById('navbar-toggle');
 const navLinks = document.getElementById('nav-links');
 
@@ -15,30 +9,26 @@ toggleButton.addEventListener('click', () => {
 
 // Typing effect function
 function autoTypeAndDelete(elementId, text, typingDelay, deletingDelay, pauseDelay) {
-    const element = document.getElementById(elementId); // Get the element where typing happens
-    let currentIndex = 0; // Start from the first letter
-    let isDeleting = false; // Flag to determine whether we are deleting or typing
+    const element = document.getElementById(elementId); 
+    let currentIndex = 0; 
+    let isDeleting = false; 
   
     function type() {
         if (!isDeleting) {
-            // Typing effect
             element.textContent += text[currentIndex];
             currentIndex++;
     
             if (currentIndex === text.length) {
-                // When the whole text is typed, switch to deleting mode after a pause
                 isDeleting = true;
                 setTimeout(type, pauseDelay);
             } else {
                 setTimeout(type, typingDelay);
             }
         } else {
-            // Deleting effect
             element.textContent = element.textContent.slice(0, -1);
             currentIndex--;
     
             if (currentIndex === 0) {
-                // When the text is completely deleted, switch back to typing mode after a pause
                 isDeleting = false;
                 setTimeout(type, pauseDelay);
             } else {
@@ -46,17 +36,12 @@ function autoTypeAndDelete(elementId, text, typingDelay, deletingDelay, pauseDel
             }
         }
     }
-  
-    // Start the typing effect
     type();
 }
-  
-// Initialize typing effect after DOM content is loaded
 document.addEventListener("DOMContentLoaded", function() {
-    autoTypeAndDelete("developer-text", "Software Developer", 150, 100, 1000); // Typing in red
+    autoTypeAndDelete("developer-text", "Software Developer", 150, 100, 1000);
 });
 
-// Automatic card slider functionality
 const cardsContainer = document.querySelector(".card-carousel");
 const cardsController = document.querySelector(".card-carousel + .card-controller");
 
@@ -106,8 +91,6 @@ class DraggingEvent {
             }
         });
     }
-
-    // Get the distance that the user has dragged
     getDistance(callback) {
         function distanceInit(e1) {
             let startingX, startingY;
@@ -146,31 +129,19 @@ class DraggingEvent {
 class CardCarousel extends DraggingEvent {
     constructor(container, controller = undefined) {
         super(container);
-
-        // DOM elements
         this.container = container;
         this.controllerElement = controller;
         this.cards = container.querySelectorAll(".card");
-
-        // Carousel data
         this.centerIndex = (this.cards.length - 1) / 2;
         this.cardWidth = (this.cards[0].offsetWidth / this.container.offsetWidth) * 100;
         this.xScale = {};
-
-        // Resizing
         window.addEventListener("resize", this.updateCardWidth.bind(this));
 
         if (this.controllerElement) {
             this.controllerElement.addEventListener("keydown", this.controller.bind(this));
         }
-
-        // Initializers
         this.build();
-
-        // Bind dragging event
         super.getDistance(this.moveCards.bind(this));
-
-        // Start automatic sliding
         this.startAutoSlide();
     }
 
@@ -213,7 +184,6 @@ class CardCarousel extends DraggingEvent {
         }
 
         if (e.keyCode == 37) {
-            // Right arrow
             for (let x in this.xScale) {
                 const newX = parseInt(x) + 1 > this.centerIndex ? -this.centerIndex : parseInt(x) + 1;
 
@@ -355,10 +325,9 @@ class CardCarousel extends DraggingEvent {
 
     startAutoSlide() {
         setInterval(() => {
-            this.controller({ keyCode: 39 }); // Simulate left arrow key press
-        }, 3000); // Adjust the time interval as needed
+            this.controller({ keyCode: 39 }); 
+        }, 3000); 
     }
 }
 
-// Initialize the card carousel
 const carousel = new CardCarousel(cardsContainer, cardsController);

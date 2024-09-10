@@ -21,8 +21,8 @@ section{
     align-items: center;
     padding: 15px;
     background-color: #333;
-    position: relative; /* Ensure it's the containing block for absolute children */
-    z-index: 1000; /* Higher z-index to stay on top of other content */
+    position: relative; 
+    z-index: 1000;
     margin-bottom: 5%;
   }
   
@@ -70,7 +70,7 @@ section{
     top: 100%;
     left: 0;
     min-width: 150px;
-    z-index: 1001; /* Ensure dropdown is on top of the navbar */
+    z-index: 1001; 
   }
   
   .dropdown-menu li a {
@@ -229,7 +229,6 @@ section{
     flex-direction: column;
     padding-top: 2%;
     /* margin-bottom: 13%; */
-    animation: upDown 2s ease-in-out infinite;
 }
 .services_content h2{
     color: white;
@@ -247,14 +246,22 @@ section{
     color: red;
     padding: 15px 5px;
     max-width: 70%;
-    margin-bottom: 5%;
+    margin-bottom: 3%;
+    animation: upDown 2s ease-in-out infinite;
+
 }
 .web_develpe_service:hover{
     background-color: red;
 }
+.web_develpe_service:hover .service_content_description h2 {
+    color: #fff; 
+}
 .web_develpe_service:hover .service_content_description p {
-    color: #fff; /* Color change on hover */
-  }
+    color: #fff; 
+}
+.service_content_description h2{
+    color: red;
+}
 .service_content_img1{
     width: 45px;
 }
@@ -267,13 +274,16 @@ section{
     padding: 15px 5px;
     max-width: 70%;
     margin-bottom: 3%;
-
+    animation: upDown 2s ease-in-out infinite;
 }
 .web_design_service:hover{
     background-color: red;
 }
-.web_design_service:hover .service_content_description p {
-    color: #fff; /* Color change on hover */
+.web_design_service:hover .service_content_description h2 {
+    color: #fff; 
+  }
+  .web_design_service:hover .service_content_description p {
+    color: #fff;
   }
 .service_content_img2{
     width: 70px;
@@ -287,12 +297,16 @@ section{
     color: red;
     padding: 15px 5px;
     max-width: 70%;
+    animation: upDown 2s ease-in-out infinite;
 }
 .mobile_develpe_service:hover{
     background-color: red;
 }
+.mobile_develpe_service:hover .service_content_description h2 {
+    color: #fff; 
+  }
 .mobile_develpe_service:hover .service_content_description p {
-    color: #fff; /* Color change on hover */
+    color: #fff; 
   }
 .service_content_img3{
     width: 70px;
@@ -339,14 +353,14 @@ width: 20%;
     align-items: center;
 }
 .download_cv_btn {
-    text-decoration: none; /* Remove underline from link */
+    text-decoration: none;
     margin-top: 3%;
     margin-bottom: 3.5%;
 
 }
 
 .download_cv_btn {
-    background-color: red; /* Example color */
+    background-color: red; 
     color: white;
     padding: 10px 20px;
     border: none;
@@ -406,7 +420,7 @@ width: 20%;
 }
 @keyframes upDown {
     0% { transform: translateY(0); }
-    50% { transform: translateY(-20px); } /* Move up by 20px */
+    50% { transform: translateY(-20px); } 
     100% { transform: translateY(0); }
 }
 
@@ -564,16 +578,21 @@ width: 20%;
      .services_content{
         margin-top: 5%;
     }
+    .services_content h3{
+        color: red;
+        font-size: 20px;
+        margin-bottom: 8%;
+    }
   }
 
   @media (max-width: 767px) {
 
     .navbar-toggle {
-        display: block; /* Show toggle button on smaller screens */
+        display: block;
       }
     
       .nav-links {
-        display: none; /* Hide nav links initially on smaller screens */
+        display: none;
         flex-direction: column;
         width: 100%;
         background-color: #333;
@@ -581,15 +600,15 @@ width: 20%;
         top: 100%;
         left: 0;
         padding: 0;
-        z-index: 1000; /* Ensure it’s above other content but below dropdown menu */
+        z-index: 1000; 
       }
     
       .nav-links.show {
-        display: flex; /* Show nav links when 'show' class is added */
+        display: flex; 
       }
     
       .nav-links li:hover > .dropdown-menu {
-        position: static; /* Dropdown menu under the link */
+        position: static;
       }
     .image_content{
         display: flex;
@@ -655,7 +674,7 @@ width: 20%;
     .services_content h3{
         color: red;
         font-size: 20px;
-        margin-bottom: 3%;
+        margin-bottom: 10%;
     }
     .service_content_img1{
        display: none;
@@ -700,22 +719,22 @@ width: 20%;
         margin-top: 10%;
     }
     .list_icon_container .hamburg {
-      display: block; /* Show menu icon */
+      display: block; 
     }
   
     .list_icon_container ul {
         display: none; 
-        position: absolute; /* Absolute positioning to display below the icon */
-        top: 20px; /* Adjust to move the list below the icon */
+        position: absolute; 
+        top: 20px; 
         right: 0px;
         flex-direction: column;
-        background-color: #b6abab; /* Background color for list items */
+        background-color: #b6abab; 
         /* padding: 10px; */
         border-radius: 5px;
     }
   
     .list_icon_container ul.show {
-      display: flex; /* Show list items when toggled */
+      display: flex; 
     }
     .contact_individual{
     margin-bottom: 3%;
@@ -741,15 +760,6 @@ width: 20%;
    
   }
   @media only screen and (max-width: 600px) {
-    /* .skill_section{
-        background-image: none
-    }
-    .project_section{
-        background-image: none
-    }
-    .services_section{
-        background-image: none
-    } */
     section{
         width: 100%;
         min-height: 30vh;
