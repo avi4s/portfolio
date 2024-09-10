@@ -738,6 +738,17 @@ width: 20%;
         margin-top: 4%;
         margin-bottom: 15%;
     }
+   
   }
-
+  @media only screen and (max-width: 600px) {
+    .skill_section{
+        background-image: none
+    }
+    .project_section{
+        background-image: none
+    }
+    .services_section{
+        background-image: none
+    }
+  }
   
