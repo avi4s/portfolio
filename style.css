@@ -342,7 +342,7 @@ width: 20%;
 
 }
 
-.download_cv_btn button {
+.download_cv_btn {
     background-color: red; /* Example color */
     color: white;
     padding: 10px 20px;
