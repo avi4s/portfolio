@@ -595,13 +595,7 @@ width: 20%;
 
 }
   
-  @media screen and (max-width: 640px) {
-    .card-carousel {
-      margin-left: calc((100vw - var(--carousel-min-width) - 40px) / 2)
-    }
-  }
-  
-  .card-carousel.smooth-return {
+.card-carousel.smooth-return {
     transition: all .2s ease;
   }
   
@@ -1029,6 +1023,8 @@ width: 20%;
     .about_me_content h2{
         color: white;
         font-size: 20px;
+        white-space: nowrap;
+
     }
     .contact_content h2{
         white-space: nowrap;
@@ -1045,6 +1041,10 @@ width: 20%;
 
     }
   }
-  
+  @media screen and (max-width: 640px) {
+    .card-carousel {
+      margin-left: calc((100vw - var(--carousel-min-width) - 40px) / 2)
+    }
+  }
 
 
