@@ -1046,6 +1046,12 @@ width: 20%;
         grid-auto-columns: 100%;
 
     }
+    .footer-name, 
+.footer-email {
+    font-size: 14px; 
+    font-weight: bold;
+    margin: 5px 0; 
+}
   }
   @media screen and (max-width: 640px) {
     .card-carousel {
