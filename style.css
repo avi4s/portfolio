@@ -997,6 +997,12 @@ width: 20%;
         margin-top: 4%;
         margin-bottom: 12%;
     }
+    .footer-name, 
+.footer-email {
+    font-size: 16px; 
+    font-weight: bold;
+    margin: 5px 0; 
+}
    
   }
   @media only screen and (max-width: 600px) {
