@@ -915,8 +915,8 @@ width: 20%;
         font-size: 16px;
     }
     .download_cv_btn{
-        /* padding: 2%; */
-        background-color: green;
+        padding:0 2%;
+        background-color: red;
         color: white;
         border-radius: 10%;
         cursor: pointer;
