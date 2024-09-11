@@ -1015,7 +1015,7 @@ width: 20%;
      }
     #auto-typer {
         display: inline; 
-        font-size: 20px;
+        font-size: 16px;
         position: relative;
     }
     #auto-typer::after {
@@ -1025,6 +1025,10 @@ width: 20%;
         animation: blink 1s step-start infinite; 
         position: absolute;
         right: -5px; 
+    }
+    .about_me_content h2{
+        color: white;
+        font-size: 20px;
     }
     .contact_content h2{
         white-space: nowrap;
