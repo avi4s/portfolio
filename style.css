@@ -1007,6 +1007,10 @@ width: 20%;
         margin-top: 4%;
         margin-bottom: 12%;
     }
+    .wrapper .carousel {
+        grid-auto-columns: 100%;
+
+    }
     .footer-name, 
 .footer-email {
     font-size: 16px; 
