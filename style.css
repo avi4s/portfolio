@@ -1017,11 +1017,11 @@ width: 20%;
         min-height: 30vh;
     }
     .description{
-        font-size: 13px;
+        font-size: 16px;
      }
     #auto-typer {
         display: inline; 
-        font-size: 12px;
+        font-size: 16px;
         position: relative;
     }
     #auto-typer::after {
@@ -1032,16 +1032,11 @@ width: 20%;
         position: absolute;
         right: -5px; 
     }
-    .main_content h1{
-        font-size: 20px;
-    }
-    .about_me_introduction p {
-        font-size: 15px;
-    }
     .about_me_content h2{
         color: white;
         font-size: 20px;
         white-space: nowrap;
+
     }
     .contact_content h2{
         white-space: nowrap;
@@ -1063,9 +1058,9 @@ width: 20%;
     font-weight: bold;
     margin: 5px 0; 
 }
-.download_cv_btn{
-    padding:1% 2%;
-}
+   .download_cv_btn{
+        padding:1% 2%;
+    }
   }
   @media screen and (max-width: 640px) {
     .card-carousel {
