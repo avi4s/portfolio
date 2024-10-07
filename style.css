@@ -1017,11 +1017,11 @@ width: 20%;
         min-height: 30vh;
     }
     .description{
-        font-size: 16px;
+        font-size: 13px;
      }
     #auto-typer {
         display: inline; 
-        font-size: 16px;
+        font-size: 12px;
         position: relative;
     }
     #auto-typer::after {
@@ -1035,11 +1035,13 @@ width: 20%;
     .main_content h1{
         font-size: 20px;
     }
+    .about_me_introduction p {
+        font-size: 15px;
+    }
     .about_me_content h2{
         color: white;
         font-size: 20px;
         white-space: nowrap;
-
     }
     .contact_content h2{
         white-space: nowrap;
