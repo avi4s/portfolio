@@ -26,7 +26,7 @@ section{
     top: 0px;
     z-index: 1000;
     margin-bottom: 5%;
-    height: 10px;
+    height: 15px;
   }
   
   .navbar .brand {
@@ -778,7 +778,7 @@ width: 20%;
       }
     
       .navbar-toggle {
-        display: none; /* Hide toggle button on larger screens */
+        display: none; 
       }
     section{
         width: 100%;
@@ -826,6 +826,9 @@ width: 20%;
   }
 
   @media (max-width: 767px) {
+    .navbar {
+        height: 10px;
+      }
 
     .navbar-toggle {
         display: block;
@@ -1000,9 +1003,6 @@ width: 20%;
         margin-bottom: 2%;
     }
     .project_content h2{
-        /* text-align: center;
-        font-size: 25px;
-        color: white; */
         margin-top: 4%;
         margin-bottom: 12%;
     }
@@ -1061,11 +1061,14 @@ width: 20%;
     font-weight: bold;
     margin: 5px 0; 
 }
+.card-carousel {
+    margin-left: calc((100vw - var(--carousel-min-width) - 40px) / 2)
   }
-  @media screen and (max-width: 640px) {
+  }
+  /* @media screen and (max-width: 640px) {
     .card-carousel {
       margin-left: calc((100vw - var(--carousel-min-width) - 40px) / 2)
     }
-  }
+  } */
 
 
