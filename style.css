@@ -859,6 +859,9 @@ width: 20%;
       .nav-links li:hover > .dropdown-menu {
         position: static;
       }
+      .description{
+        font-size: 14px;
+     }
     .image_content{
         display: flex;
         justify-content: space-evenly;
@@ -935,7 +938,7 @@ width: 20%;
      }
     #auto-typer {
         display: inline; 
-        font-size: 25px;
+        font-size: 18px;
         position: relative;
     }
     #auto-typer::after {
@@ -957,6 +960,9 @@ width: 20%;
     .about_me_content{
        margin-bottom: 10%;
     }
+    .about_me_content h2{
+       white-space: nowrap;
+     }
     .skills_content{
        margin-bottom: 15%;
     }
@@ -994,6 +1000,9 @@ width: 20%;
     .contact_content{
         margin-top: 2%;
     }
+    .contact_content h2{
+        white-space: nowrap;
+      }
     .contact_content p,i{
         color: black;
         font-weight: 700;
