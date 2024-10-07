@@ -827,7 +827,7 @@ width: 20%;
     }
   }
 
-  @media (max-width: 767px) {
+  @media (max-width: 600px) {
     .navbar {
         height: 10px;
       }
@@ -1011,7 +1011,7 @@ width: 20%;
 }
    
   }
-  @media only screen and (max-width: 600px) {
+  /* @media only screen and (max-width: 600px) {
     section{
         width: 100%;
         min-height: 30vh;
@@ -1061,7 +1061,7 @@ width: 20%;
 .download_cv_btn{
     padding:1% 2%;
 }
-  }
+  } */
   @media screen and (max-width: 640px) {
     .card-carousel {
       margin-left: calc((100vw - var(--carousel-min-width) - 40px) / 2)
