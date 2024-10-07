@@ -1032,6 +1032,9 @@ width: 20%;
         position: absolute;
         right: -5px; 
     }
+    .main_content h1{
+        font-size: 20px;
+    }
     .about_me_content h2{
         color: white;
         font-size: 20px;
