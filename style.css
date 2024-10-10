@@ -944,10 +944,12 @@ width: 20%;
     #auto-typer::after {
         content: '|'; 
         font-weight: bold;
+    font-size: 18px;
         color: white;
         animation: blink 1s step-start infinite; 
         position: absolute;
-        right: -5px; 
+    right: -10px; 
+         
     }
     .image_content .img1{
         /* width: 70%; */
