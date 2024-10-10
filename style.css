@@ -178,7 +178,7 @@ section{
     color: white;
     animation: blink 1s step-start infinite; 
     position: absolute;
-    right: -5px; 
+    right: -10px; 
 }
 #developer-text {
     color: red;
