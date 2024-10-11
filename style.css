@@ -970,25 +970,7 @@ width: 20%;
     }
     .services_content{
         margin-top: 10%;
-    }
-    .list_icon_container .hamburg {
-      display: block; 
-    }
-  
-    .list_icon_container ul {
-        display: none; 
-        position: absolute; 
-        top: 20px; 
-        right: 0px;
-        flex-direction: column;
-        background-color: #b6abab; 
-        /* padding: 10px; */
-        border-radius: 5px;
-    }
-  
-    .list_icon_container ul.show {
-      display: flex; 
-    }
+    } 
     .contact_individual{
     margin-bottom: 3%;
     }
@@ -1030,57 +1012,7 @@ width: 20%;
 }
    
   }
-  /* @media only screen and (max-width: 600px) {
-    section{
-        width: 100%;
-        min-height: 30vh;
-    }
-    .description{
-        font-size: 16px;
-     }
-    #auto-typer {
-        display: inline; 
-        font-size: 16px;
-        position: relative;
-    }
-    #auto-typer::after {
-        content: '|'; 
-        font-weight: bold;
-        color: white;
-        animation: blink 1s step-start infinite; 
-        position: absolute;
-        right: -5px; 
-    }
-    .about_me_content h2{
-        color: white;
-        font-size: 20px;
-        white-space: nowrap;
-
-    }
-    .contact_content h2{
-        white-space: nowrap;
-    }
-    .contact_details{
-        margin-top:5%;
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        flex-direction: column;
-    }
-    .wrapper .carousel {
-        grid-auto-columns: 100%;
-
-    }
-    .footer-name, 
-.footer-email {
-    font-size: 14px; 
-    font-weight: bold;
-    margin: 5px 0; 
-}
-   .download_cv_btn{
-        padding:1% 2%;
-    }
-  } */
+  
   @media screen and (max-width: 640px) {
     .card-carousel {
       margin-left: calc((100vw - var(--carousel-min-width) - 40px) / 2)

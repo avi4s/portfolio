@@ -1,16 +1,10 @@
-// const toggleButton = document.getElementById('navbar-toggle');
-// const navLinks = document.getElementById('nav-links');
-
-// toggleButton.addEventListener('click', () => {
-//   navLinks.classList.toggle('show');
-// });
 const navbarToggle = document.getElementById('navbar-toggle');
 const navLinks = document.getElementById('nav-links');
 const barsIcon = navbarToggle.querySelector('.fa-bars');
 const crossIcon = navbarToggle.querySelector('.fa-xmark');
 
 navbarToggle.addEventListener('click', () => {
-  navLinks.classList.toggle('active'); // Toggles the visibility of nav links
+  navLinks.classList.toggle('active'); 
   barsIcon.style.display = barsIcon.style.display === 'none' ? 'inline' : 'none';
   crossIcon.style.display = crossIcon.style.display === 'none' ? 'inline' : 'none';
 });
