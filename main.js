@@ -9,6 +9,25 @@ navbarToggle.addEventListener('click', () => {
   crossIcon.style.display = crossIcon.style.display === 'none' ? 'inline' : 'none';
 });
 
+// scroll to top
+let scrollTopBtn = document.getElementById("scrollTopBtn");
+window.onscroll = function() {
+    scrollFunction();
+};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        scrollTopBtn.style.display = "block";
+        scrollTopBtn.classList.add("show");
+    } else {
+        scrollTopBtn.style.display = "none";
+        scrollTopBtn.classList.remove("show");
+    }
+}
+function scrollToTop() {
+    window.scrollTo({top: 0, behavior: 'smooth'});
+}
+
 
 
 // Typing effect function
