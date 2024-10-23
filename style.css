@@ -15,6 +15,17 @@ section{
     width: 100%;
     min-height: 85vh;
 }
+.hidden {
+    opacity: 0;
+    transform: translateY(50px); /* Adjust this for the direction you want to move */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/* Make visible when in view */
+.visible {
+    opacity: 1;
+    transform: translateY(0); /* Return to the original position */
+}
    /* navigation menu start  */
 .navbar {
     display: flex;

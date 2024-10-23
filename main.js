@@ -138,4 +138,21 @@ document.addEventListener("DOMContentLoaded", function () {
   
     autoPlay();
   });
-  
+  // Select all elements with the class "hidden"
+const hiddenElements = document.querySelectorAll('.hidden');
+
+// Create the intersection observer
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible'); // Add visible class when the element is in view
+        }
+    });
+}, {
+    threshold: 0.1 // Adjust the visibility threshold as needed
+});
+
+// Observe each hidden element
+hiddenElements.forEach(element => {
+    observer.observe(element);
+});
