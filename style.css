@@ -310,7 +310,7 @@ section{
     max-width: 70%;
     margin-bottom: 3%;
     animation: rightLeft 5s ease-in-out infinite;
-
+    border: 3px solid red;
 }
 .web_develpe_service:hover{
     background-color: red;
@@ -337,6 +337,7 @@ section{
     max-width: 70%;
     margin-bottom: 3%;
     animation: leftRight 5s ease-in-out infinite;
+    border: 3px solid red;
 }
 .web_design_service:hover{
     background-color: red;
@@ -360,6 +361,7 @@ section{
     padding: 15px 5px;
     max-width: 70%;
     animation: rightLeft 5s ease-in-out infinite;
+    border: 3px solid red;
 }
 .mobile_develpe_service:hover{
     background-color: red;
